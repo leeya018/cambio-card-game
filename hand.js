@@ -9,8 +9,23 @@ class Hand {
   constructor(hand) {
     this.hand = hand;
   }
+  sort() {
+    this.hand = this.hand.sort((c1, c2) => c1.getValue() - c2.getValue());
+  }
+  at(ind) {
+    if (ind < 0 || ind >= this.hand.length) {
+      return null;
+    }
+    return this.hand[ind];
+  }
+  getLength() {
+    return this.hand.length;
+  }
   removeCard(card) {
     this.hand = this.hand.filter((c) => c.getId() !== card.getId());
+  }
+  getLastItem() {
+    return this.hand[this.hand.length - 1];
   }
   addCard(card) {
     this.hand.push(card);

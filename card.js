@@ -18,7 +18,7 @@ class Card {
   getShape() {
     return this.shape;
   }
-  getHumber() {
+  getNumber() {
     return this.number;
   }
   isMagic() {

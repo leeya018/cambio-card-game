@@ -28,14 +28,15 @@ class ThrownDeck {
     this.deck.map((card) => card.print());
   }
 }
+module.exports = ThrownDeck;
 
-const card = new Card(11, SHAPES.clof);
-const card1 = new Card(12, SHAPES.heart);
-let deck = new ThrownDeck();
-deck.print();
-console.log(deck.getLength());
-deck.pushCard(card);
-deck.pushCard(card1);
-console.log(deck.getLength());
-console.log(deck.getTopCard());
-console.log(deck.getLength());
+// const card = new Card(11, SHAPES.clof);
+// const card1 = new Card(12, SHAPES.heart);
+// let deck = new ThrownDeck();
+// deck.print();
+// console.log(deck.getLength());
+// deck.pushCard(card);
+// deck.pushCard(card1);
+// console.log(deck.getLength());
+// console.log(deck.getTopCard());
+// console.log(deck.getLength());

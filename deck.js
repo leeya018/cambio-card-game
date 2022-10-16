@@ -33,6 +33,9 @@ class Deck {
   getTopCard() {
     return this.deck.pop();
   }
+  getFourCards() {
+    return [this.deck.pop(), this.deck.pop(), this.deck.pop(), this.deck.pop()];
+  }
   hasCards() {
     return this.deck.length > 0;
   }
@@ -45,11 +48,12 @@ class Deck {
   }
 }
 
-let deck = new Deck();
-deck.shuffle();
-deck.print();
-const len = deck.getLength();
-for (let i = 0; i < len - 1; i++) {
-  deck.getTopCard();
-}
-console.log(deck.hasCards());
+module.exports = Deck;
+// let deck = new Deck();
+// deck.shuffle();
+// deck.print();
+// const len = deck.getLength();
+// for (let i = 0; i < len - 1; i++) {
+//   deck.getTopCard();
+// }
+// console.log(deck.hasCards());

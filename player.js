@@ -33,21 +33,21 @@ class Player {
     this.hand.print();
   }
 }
-
-let cards = [
-  new Card(SHAPES.clof, 1),
-  new Card(SHAPES.diamond, 5),
-  new Card(SHAPES.diamond, 12),
-];
-const cardToThrow = cards[1];
-const hand = new Hand(cards);
-const p = new Player("lee", hand);
-p.print();
-p.throwCard(cardToThrow);
-p.print();
-p.getCard(cardToThrow);
-p.print();
-console.log(p.hasCall());
-p.callCambio();
-p.hasCall();
-console.log(p.hasCall());
+module.exports = Player;
+// let cards = [
+//   new Card(SHAPES.clof, 1),
+//   new Card(SHAPES.diamond, 5),
+//   new Card(SHAPES.diamond, 12),
+// ];
+// const cardToThrow = cards[1];
+// const hand = new Hand(cards);
+// const p = new Player("lee", hand);
+// p.print();
+// p.throwCard(cardToThrow);
+// p.print();
+// p.getCard(cardToThrow);
+// p.print();
+// console.log(p.hasCall());
+// p.callCambio();
+// p.hasCall();
+// console.log(p.hasCall());
