@@ -32,7 +32,10 @@ class Computer {
   callCambio() {
     this.isDone = true;
   }
-  stick(card) {
+  stick() {
+    // stick the card on top of the ThrownDeck when you have the same card on in hand
+    //  need to make that with random time and pay attention
+    // that other playes did not stick if first
     // not yet implemented
   }
   hasCall() {
