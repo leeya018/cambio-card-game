@@ -1,9 +1,4 @@
-const SHAPES = {
-  spade: "spade",
-  heart: "heart",
-  diamond: "diamond",
-  clof: "clof",
-};
+const SHAPES = require("./util");
 //  joker card will be with value of  -1
 class Card {
   constructor(shape, number) {
@@ -39,6 +34,7 @@ class Card {
     ) {
       return 0;
     }
+
     return this.number;
   }
 

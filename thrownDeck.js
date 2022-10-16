@@ -1,10 +1,5 @@
 const Card = require("./card");
-const SHAPES = {
-  spade: "spade",
-  heart: "heart",
-  diamond: "diamond",
-  clof: "clof",
-};
+const SHAPES = require("./util");
 
 class ThrownDeck {
   constructor() {

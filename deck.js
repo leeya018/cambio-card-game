@@ -1,20 +1,16 @@
 const Card = require("./card");
-const SHAPES = {
-  spade: "spade",
-  heart: "heart",
-  diamond: "diamond",
-  clof: "clof",
-};
+const SHAPES = require("./util");
+
 function initCards() {
   let cards = [];
   for (let i = 1; i <= 13; i++) {
-    cards.push(new Card(i, SHAPES.spade));
-    cards.push(new Card(i, SHAPES.heart));
-    cards.push(new Card(i, SHAPES.diamond));
-    cards.push(new Card(i, SHAPES.clof));
+    cards.push(new Card(SHAPES.spade, i));
+    cards.push(new Card(SHAPES.heart, i));
+    cards.push(new Card(SHAPES.diamond, i));
+    cards.push(new Card(SHAPES.clof, i));
   }
-  cards.push(new Card(-1, null)); //joker
-  cards.push(new Card(-1, null)); //joker
+  cards.push(new Card(SHAPES.joker1, -1)); //joker
+  cards.push(new Card(SHAPES.joker2, -1)); //joker
   return cards;
 }
 
